@@ -1,0 +1,30 @@
+{
+  "name": "nodules-requestid",
+  "version": "0.1.0",
+  "description": "X-Request-Id signer for Node.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodules/requestid.git"
+  },
+  "author": "Varankin Vladimir <nek.narqo@gmail.com> (http://github.com/narqo)",
+  "maintainers": [
+    "Varankin Vladimir <nek.narqo@gmail.com> (http://github.com/narqo)",
+    "Phillip Kovalev <twilightfeel@gmail.com> (https://github.com/kaero)"
+  ],
+  "bugs": {
+    "url": "https://github.com/nodules/requestid/issues"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "istanbul": "^0.3.5",
+    "jscs": "1.4.x",
+    "jshint": "~2.3.0",
+    "mocha": "^2.0.1"
+  },
+  "engine": {
+    "node": ">=0.10"
+  }
+}
