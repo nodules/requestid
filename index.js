@@ -1,10 +1,10 @@
 var domain = require('domain'),
-    d = domain.create(),
     requestId = module.exports;
 
 requestId.createMiddleware = function createRequestIdMiddleware() {
     return function(req, res, next) {
-        d.run(function() {
+        var reqDomain = domain.create();
+        reqDomain.run(function() {
             requestId.set(req.headers['x-request-id']);
             next();
         });
@@ -18,10 +18,10 @@ requestId.get = function getRequestId() {
     }
 };
 
-requestId.set = function setRequestId(id) {
+requestId.set = function setRequestId(reqId) {
     var activeDomain = domain.active;
     if(activeDomain != null && typeof activeDomain.requestId === 'undefined') {
-        activeDomain.requestId = id;
+        activeDomain.requestId = reqId;
     }
     return activeDomain;
 };
