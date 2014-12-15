@@ -26,11 +26,11 @@ app.use(function(req, res, next) {
 
 ## API
 
-### `requestId.createMiddleware()` → `Function<Request, Response, Function>`
+`requestId.createMiddleware()` → `Function<Request, Response, Function>`
 
 Returns the middleware function.
 
-### `requestId.get()` → `String`
+`requestId.get()` → `String`
 
 Get current request's identifier.
 
