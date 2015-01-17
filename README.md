@@ -1,4 +1,7 @@
-# requestid [![Build Status](https://secure.travis-ci.org/nodules/requestid.png)](http://travis-ci.org/nodules/requestid)
+requestid [![NPM version][npm-image]][npm-link] [![Build status][build-image]][build-link]
+=========
+
+[![devDependency status][devdeps-image]][devdeps-link]
 
 Allows to get current request identifier passed from the front-end server, e.g. nginx or heroku. One of the module's
 usecase is to pass the id with application API requests.
@@ -38,3 +41,9 @@ Get current request's identifier.
 
 MIT
 
+[npm-image]: https://img.shields.io/npm/v/requestid.svg?style=flat
+[npm-link]: https://npmjs.org/package/requestid
+[build-image]: https://img.shields.io/travis/nodules/requestid.svg?style=flat
+[build-link]: https://travis-ci.org/nodules/requestid
+[devdeps-image]: https://img.shields.io/david/dev/nodules/requestid.svg?style=flat
+[devdeps-link]: https://david-dm.org/nodules/requestid#info=peerDependencies
