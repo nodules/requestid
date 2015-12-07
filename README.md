@@ -1,3 +1,9 @@
+# THIS MODULE IS OBSOLETED
+
+The module doesn't work in real (heavy loaded) scenarios. Please consider to use other alternatives if there are some.
+
+---
+
 # requestid [![Build Status](https://secure.travis-ci.org/nodules/requestid.png)](http://travis-ci.org/nodules/requestid)
 
 Allows to get current request identifier passed from the front-end server, e.g. nginx or heroku. One of the module's
